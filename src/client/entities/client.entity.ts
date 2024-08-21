@@ -1,4 +1,4 @@
-export class Client {
+export class ClientEntity {
     id: number;
     age: number;
     cpf: string;
