@@ -6,7 +6,7 @@ import { UpdateClientDto } from './dto/update-client.dto';
 @Controller('customer-loans')
 export class ClientController {
   constructor(private readonly clientService: ClientService) {}
-
+  @HttpCode(HttpStatus.OK)
   @Post()
   create(@Body() createClientDto: CreateClientDto) {
     return this.clientService.create(createClientDto);
